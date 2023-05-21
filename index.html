@@ -15,7 +15,7 @@
 
         header{
             position: fixed;
-            background:#021115;
+            background:#212121;
             padding: 20px;
             width: 100%;
             height: 30px;
@@ -23,10 +23,12 @@
 
         .left_area h3{
             color: #fff;
-            margin: 0;
+            margin-top: 0px;
+            margin-left: 50px;
             text-transform: uppercase;
             font-size: 22px;
             font-weight: 900;
+            left: 300px;
         }
 
         .left_area span{
@@ -38,7 +40,7 @@
             background: #f00;
             text-decoration: none;
             float: right;
-            margin-top: -30px;
+            margin-top: -55px;
             margin-right: 40px;
             border-radius: 2px;
             font-size: 18px;
@@ -53,7 +55,7 @@
         }
 
         .sidebar{
-            background: #14444E;
+            background: #212121;
             margin-top: 70px;
             padding-top: 30px;
             position: fixed;
@@ -102,7 +104,7 @@
             color: #fff;
             position: fixed;
             cursor: pointer;
-            left: 300px;
+            /* left: 300px; */
             font-size: 20px;
             margin: 5px 0;
             transition: 0.5s;
@@ -129,7 +131,7 @@
 
         .content{
             margin-left: 250px;
-            background: url(https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+            background-color: #2a2a2a;
             background-position: center;
             background-size: cover;
             height: 100vh;
@@ -143,20 +145,79 @@
         #check{
             display: none;
         }
+
+        /* search */
+        .wrapper {
+        width: 100%;
+        max-width: 31.25rem;
+        margin: 6rem auto;
+        float: right;
+        margin-top: -55px;
+        margin-right: 50px;
+        }
+
+        .label {
+        font-size: .625rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: +1.3px;
+        margin-bottom: 1rem;
+        color: #fff
+        }
+
+        .searchBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        }
+
+        #searchQueryInput {
+        width: 100%;
+        height: 2.8rem;
+        background: #d9d9d9;
+        /* opacity: 0.2; */
+        outline: none;
+        border: none;
+        border-radius: 1.625rem;
+        padding: 0 3.5rem 0 1.5rem;
+        font-size: 1rem;
+        
+        }
+
+        #searchQuerySubmit {
+        width: 3.5rem;
+        height: 2.8rem;
+        margin-left: -3.5rem;
+        background: none;
+        border: none;
+        outline: none;
+        }
+
+        #searchQuerySubmit:hover {
+        cursor: pointer;
+        }
     </style>
     <body>
         <input type="checkbox" id="check">
         <!--header area start-->
         <header>
-        <label for="check">
-        <i class="fas fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left_area">
-        <h3>Brgy <span>Hub</span></h3>        
-        </div>
-        <div class="right_area">
-        <a href="#" class="logout_btn">Logout</a>        
-        </div>
+            <div class="left_area">    
+                <label for="check">
+                    <i class="fas fa-bars" id="sidebar_btn"></i>
+                </label>
+                <h3>Brgy <span>Hub</span></h3>        
+            </div>
+            <div class="wrapper">
+                <div class="searchBar">
+                  <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                  <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                    </svg>
+                  </button>
+            </div>
+              
         </header>
 
         <!--header area end-->
@@ -165,7 +226,7 @@
 
         <div class="sidebar">
         <center>
-            <img src="https://raw.githubusercontent.com/aizpop/brgyhub_admin/main/images/photo_2023-05-21_14-13-35.jpg?token=GHSAT0AAAAAACC3COGRCCTDXQKC37VQUABMZDJW5OA" class="profile_image" alt="">
+            <img src="https://raw.githubusercontent.com/aizpop/brgyhub_admin/main/images/profile.jpg?token=GHSAT0AAAAAACC3COGR2DVRGEWGB6AQW3VEZDJXAJQ" class="profile_image" alt="">
             <h4>Airah Baculo</h4>
         </center>
         <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
